@@ -1,0 +1,11 @@
+[role="main"] {
+	width: 200%;
+	transform: translateX(-25%);
+	transition: transform 0.75s ease;
+}
+[role="main"].is-px {
+	transform: translateX(0);
+}
+[role="main"].is-smith {
+	transform: translateX(-50%);
+}
