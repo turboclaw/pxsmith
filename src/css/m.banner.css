@@ -1,0 +1,16 @@
+[role="banner"] {
+	max-width: 30em;
+	margin: 0.75rem auto 0 auto;
+	padding: 0 0.75rem;
+}
+.grid--logo {
+	margin: 0;
+}
+.grid__cell--icon {
+	width: 10.1724138%;
+	margin-left: 0;
+}
+.grid__cell--title {
+	width: 88.2758621%;
+	margin-left: 1.5517241% !important;
+}

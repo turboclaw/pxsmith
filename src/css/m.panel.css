@@ -12,8 +12,10 @@
 .landing {
 	position: absolute;
 	width: 50%;
+	height: 100vh;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: rgba(0, 0, 0, 0.3);
+	background: url(../img/josh.png) no-repeat center bottom;
+	background-size: contain;
 }
