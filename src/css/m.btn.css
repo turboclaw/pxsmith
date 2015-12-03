@@ -1,0 +1,23 @@
+.btn {
+	border: 0;
+	background: none;
+}
+.btn--arrow {
+	width: 10%;
+	height: 8em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	text-indent: -1000em;
+}
+.btn--arrow--left {
+	background-image: url(../img/arrow-left.png);
+	left: 0.75rem;
+}
+.btn--arrow--right {
+	background-image: url(../img/arrow-right.png);
+	right: 0.75rem;
+}
