@@ -22,6 +22,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-shell": "^1.1.2",
     "grunt-targethtml": "^0.2.6",
+    "handlebars": "^4.0.5",
     "jspm": "^0.16.15",
     "normalize.css": "^3.0.3",
     "systemjs": "^0.19.5"
