@@ -17,9 +17,14 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
+    "backbone": "npm:backbone@1.2.3",
+    "backbone.marionette": "npm:backbone.marionette@2.4.4",
+    "backbone.radio": "npm:backbone.radio@1.0.2",
     "core-js": "npm:core-js@1.2.6",
     "dpz-grid": "github:dominosui/dpz-grid@master",
+    "handlebars": "github:components/handlebars.js@4.0.5",
     "jquery": "github:components/jquery@2.1.4",
+    "underscore": "npm:underscore@1.8.3",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
@@ -37,6 +42,34 @@ System.config({
     },
     "npm:babel-runtime@5.8.34": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:backbone.babysitter@0.1.10": {
+      "backbone": "npm:backbone@1.2.3",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "underscore": "npm:underscore@1.8.3"
+    },
+    "npm:backbone.marionette@2.4.4": {
+      "backbone": "npm:backbone@1.2.3",
+      "backbone.babysitter": "npm:backbone.babysitter@0.1.10",
+      "backbone.wreqr": "npm:backbone.wreqr@1.3.5",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "underscore": "npm:underscore@1.8.3"
+    },
+    "npm:backbone.radio@1.0.2": {
+      "backbone": "npm:backbone@1.2.3",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0",
+      "underscore": "npm:underscore@1.8.3"
+    },
+    "npm:backbone.wreqr@1.3.5": {
+      "backbone": "npm:backbone@1.2.3",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "underscore": "npm:underscore@1.8.3"
+    },
+    "npm:backbone@1.2.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "underscore": "npm:underscore@1.8.3"
     },
     "npm:core-js@1.2.6": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
