@@ -1,6 +1,7 @@
 .panel {
 	width: 50%;
 	float: left;
+	min-height: 5em;
 }
 .panel--px {
 	background: gray;
