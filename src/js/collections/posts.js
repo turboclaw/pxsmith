@@ -10,7 +10,6 @@ export default Backbone.Collection.extend({
         return "https://api.tumblr.com/v2/blog/rashystreakers.tumblr.com/posts";
     },
     sync(method, model, options) {
-        debugger;
         return $.ajax(_.extend({
             type: "GET",
             dataType: "jsonp",
@@ -18,7 +17,7 @@ export default Backbone.Collection.extend({
             processData: true,
             data: {
                 api_key: "YV4xluM0hMbnvjieoZsfJKTzf0gYeoQD5ubz7RJd07bOW3Pxd5",
-                limit: "50",
+                limit: "10",
                 tag: this.tag
             }
         }, options));

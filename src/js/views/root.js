@@ -1,6 +1,6 @@
 import Marionette from "backbone.marionette";
 import Radio from "backbone.radio";
-import PostsView from "js/views/posts/list";
+import TagsView from "js/views/tags/list";
 import JST from "js/shims/jst";
 
 export default Marionette.LayoutView.extend({
@@ -13,7 +13,7 @@ export default Marionette.LayoutView.extend({
     },
 
     onRender() {
-        this.panelSmith.show( new PostsView() );
+        this.panelSmith.show( new TagsView( {panel: "smith"} ) );
     },
 
     initialize() {
