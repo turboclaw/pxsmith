@@ -7,8 +7,8 @@ export default Marionette.CompositeView.extend({
     template: JST["tags/list"],
     childView: PostsView,
     childViewContainer: "[data-hook='tags-list']",
-    collection: new TagsCollection(),
     initialize(options = {}) {
+    	this.collection = new TagsCollection(options);
         this.collection.fetch();
     }
 });
