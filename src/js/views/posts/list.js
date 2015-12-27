@@ -9,7 +9,7 @@ export default Marionette.CompositeView.extend({
     childViewContainer: "[data-hook='posts-list']",
     initialize(options = {}) {
     	this.collection = new PostsCollection({
-    		tag: options.model.get("tumblrTagSlug")
+    		tag: options.model.get("tumblrTag")
     	});
         this.collection.fetch();
     }
