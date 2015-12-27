@@ -8,7 +8,7 @@ export default Backbone.Collection.extend({
     },
     url() {
         let panelConfigLocs = {
-            px: "",
+            px: "https://spreadsheets.google.com/feeds/list/1DwsCm5vpflLTWWgcPVhu1UWeQrgKxEdiwwj3BVzsQNs/od6/public/basic?alt=json",
             smith: "https://spreadsheets.google.com/feeds/list/1JdCBP8Jmm0ddnichOhq-OklHXKo0SmeJeNMpivAPcjM/od6/public/basic?alt=json"
         }
         return panelConfigLocs[this.panel];

@@ -14,6 +14,7 @@ export default Marionette.LayoutView.extend({
 
     onRender() {
         this.panelSmith.show( new TagsView( {panel: "smith"} ) );
+        this.panelPx.show( new TagsView( {panel: "px"} ) );
     },
 
     initialize() {
