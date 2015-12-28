@@ -1,5 +1,6 @@
 import Marionette from "backbone.marionette";
 import Radio from "backbone.radio";
+import LandingView from "js/views/landing/index";
 import TagsView from "js/views/tags/list";
 import JST from "js/shims/jst";
 
@@ -8,11 +9,13 @@ export default Marionette.LayoutView.extend({
     template: JST["root"],
 
     regions: {
+        panelLanding: "[data-hook='panel-landing']",
         panelPx: "[data-hook='panel-px']",
         panelSmith: "[data-hook='panel-smith']"
     },
 
     onRender() {
+        this.panelLanding.show( new LandingView() );
         this.panelSmith.show( new TagsView( {panel: "smith"} ) );
         this.panelPx.show( new TagsView( {panel: "px"} ) );
     },

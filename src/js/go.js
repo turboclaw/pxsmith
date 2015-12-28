@@ -28,14 +28,6 @@ $(() => {
 
     window.pxsmithApp.start();
 
-    let $main = $("main");
-    $("[data-hook='show-px']").on("click", () => {
-    	$main.addClass("is-px").removeClass("is-smith");
-    });
-    $("[data-hook='show-smith']").on("click", () => {
-    	$main.addClass("is-smith").removeClass("is-px");
-    });
-
     /**
      * Handler for any jQuery ajax error. Respond by triggereing different events conditionally by
      * HTTP status code
