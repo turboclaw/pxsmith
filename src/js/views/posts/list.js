@@ -4,6 +4,8 @@ import PostsCollection from "js/collections/posts";
 import PostListItemView from "js/views/posts/list-item";
 
 export default Marionette.CompositeView.extend({
+	tagName: "li",
+	className: "grid__cell--1",
     template: JST["posts/list"],
     childView: PostListItemView,
     childViewContainer: "[data-hook='posts-list']",
@@ -12,5 +14,10 @@ export default Marionette.CompositeView.extend({
     		tag: options.model.get("tumblrTag")
     	});
         this.collection.fetch();
+
+        this.listenTo(this.collection, "sync", this.removeLoading)
+    },
+    removeLoading() {
+    	this.$el.find("[data-hook='loading']").remove();
     }
 });
