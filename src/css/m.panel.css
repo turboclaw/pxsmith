@@ -1,5 +1,7 @@
 .panel {
 	width: 50%;
+	padding: 1em;
+	box-sizing: border-box;
 	float: left;
 	min-height: 5em;
 }
@@ -19,4 +21,14 @@
 	transform: translateX(-50%);
 	background: url(../img/josh.png) no-repeat center bottom;
 	background-size: contain;
+}
+
+.post__photo {
+/*	list-style: none;
+	width: 150px;
+	height: 150px;
+	border: 3px solid green;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;*/
 }
