@@ -1,9 +1,9 @@
 @font-face {
     font-family: "petyka_-_retro_computer___sRg";
-    src: url("petyka_-_retro_computer___short-webfont.eot");
-    src: url("petyka_-_retro_computer___short-webfont.eot?#iefix") format("embedded-opentype"),
-         url("petyka_-_retro_computer___short-webfont.woff") format("woff"),
-         url("petyka_-_retro_computer___short-webfont.svg#petyka_-_retro_computer___sRg") format("svg");
+    src: url("../fonts/petyka_-_retro_computer___short-webfont.eot");
+    src: url("../fonts/petyka_-_retro_computer___short-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/petyka_-_retro_computer___short-webfont.woff") format("woff"),
+         url("../fonts/petyka_-_retro_computer___short-webfont.svg#petyka_-_retro_computer___sRg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
