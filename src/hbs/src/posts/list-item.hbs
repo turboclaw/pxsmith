@@ -1,7 +1,3 @@
-<ul class="post post--small">
-	{{#each photos}}
-	<li class="post__photo" style="background-image: url({{alt_sizes.3.url}});">
-		{{alt_sizes.3.width}} x {{alt_sizes.3.height}}
-	</li>
-	{{/each}}
-</ul>
+<div class="post__photo" style="background-image: url({{photos.0.alt_sizes.3.url}});">
+	{{photos.0.alt_sizes.3.width}} x {{photos.0.alt_sizes.3.height}}
+</div>

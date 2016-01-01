@@ -1,48 +1,54 @@
 .panel {
-	width: 50%;
-	padding: 1em;
-	box-sizing: border-box;
-	float: left;
-	min-height: 5em;
+    width: 50%;
+    padding: 1em;
+    box-sizing: border-box;
+    float: left;
+    min-height: 5em;
 }
 .panel--px {
-	padding-right: 10%;
-	background: #a9a69b;
-	color: #0098b3;
+    padding-right: 10%;
+    background: #a9a69b;
+    color: #0098b3;
 }
 .panel--smith {
-	padding-left: 10%;
-	background: #2d2a28;
-	color: #faca30;
+    padding-left: 10%;
+    background: #2d2a28;
+    color: #faca30;
 }
 
 .landing {
-	position: absolute;
-	width: 50%;
-	height: 100vh;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	background: rgba(0, 0, 0, 0.75) url(../img/josh.png) no-repeat center bottom;
-	background-size: contain;
-	transition: background-color 0.75s ease;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.75) url(../img/josh.png) no-repeat center bottom;
+    background-size: contain;
+    transition: background-color 0.75s ease;
 }
 .is-px .landing,
 .is-smith .landing {
-	background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .landing .btn--back {
-	display: none;
-	position: fixed;
-	bottom: 0.5em;
-	font: 1.25em "petyka_-_retro_computer___sRg", "San Francisco", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: none;
+    position: fixed;
+    bottom: 0.5em;
+    font: 1.25em "petyka_-_retro_computer___sRg", "San Francisco", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .is-px .landing .btn--back {
-	display: block;
-	right: 52.5%;
+    display: block;
+    right: 52.5%;
+    background: url(../img/arrow-right.png) no-repeat 100% 50%;
+    background-size: contain;
+    padding-right: 1em;
 }
 .is-smith .landing .btn--back {
-	display: block;
-	left: 52.5%;
+    display: block;
+    left: 52.5%;
+    background: url(../img/arrow-left.png) no-repeat 0 50%;
+    background-size: contain;
+    padding-left: 1em;
 }
