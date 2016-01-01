@@ -1,0 +1,13 @@
+.post--small {
+	list-style: none;
+	padding: 0;
+}
+.post__photo {
+/*	list-style: none;
+	width: 150px;
+	height: 150px;
+	border: 3px solid green;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}

@@ -18,6 +18,7 @@ export default Backbone.Collection.extend({
             data: {
                 api_key: "YV4xluM0hMbnvjieoZsfJKTzf0gYeoQD5ubz7RJd07bOW3Pxd5",
                 limit: "10",
+                type: "photo",
                 tag: this.tag
             }
         }, options));

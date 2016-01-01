@@ -6,10 +6,14 @@
 	min-height: 5em;
 }
 .panel--px {
-	background: gray;
+	padding-right: 10%;
+	background: #a9a69b;
+	color: #0098b3;
 }
 .panel--smith {
-	background: red;
+	padding-left: 10%;
+	background: #2d2a28;
+	color: #faca30;
 }
 
 .landing {
@@ -19,16 +23,26 @@
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	background: url(../img/josh.png) no-repeat center bottom;
+	background: rgba(0, 0, 0, 0.75) url(../img/josh.png) no-repeat center bottom;
 	background-size: contain;
+	transition: background-color 0.75s ease;
+}
+.is-px .landing,
+.is-smith .landing {
+	background-color: rgba(0, 0, 0, 0);
 }
 
-.post__photo {
-/*	list-style: none;
-	width: 150px;
-	height: 150px;
-	border: 3px solid green;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;*/
+.landing .btn--back {
+	display: none;
+	position: fixed;
+	bottom: 0.5em;
+	font: 1.25em "petyka_-_retro_computer___sRg", "San Francisco", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.is-px .landing .btn--back {
+	display: block;
+	right: 52.5%;
+}
+.is-smith .landing .btn--back {
+	display: block;
+	left: 52.5%;
 }

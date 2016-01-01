@@ -1,6 +1,8 @@
 body {
 	font: 300 16px/1.25 "San Francisco", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
+	background: #171615;
+	color: #f7f1e3;
 }
 
 img {
