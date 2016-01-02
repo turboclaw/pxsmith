@@ -2,6 +2,11 @@
 	max-width: 30em;
 	margin: 0.75rem auto 0 auto;
 	padding: 0 0.75rem;
+	transition: opacity 0.75s ease;
+}
+.is-px [role="banner"],
+.is-smith [role="banner"] {
+	opacity: 0.1;
 }
 .grid--logo {
 	margin: 0;

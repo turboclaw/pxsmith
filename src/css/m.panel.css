@@ -23,13 +23,8 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.75) url(../img/josh.png) no-repeat center bottom;
+    background: url(../img/josh.png) no-repeat center bottom;
     background-size: contain;
-    transition: background-color 0.75s ease;
-}
-.is-px .landing,
-.is-smith .landing {
-    background-color: rgba(0, 0, 0, 0);
 }
 
 .landing .btn--back {

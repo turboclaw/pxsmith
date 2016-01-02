@@ -13,6 +13,10 @@
 	background-position: 50% 50%;
 	text-indent: -1000em;
 }
+.is-px .btn--arrow,
+.is-smith .btn--arrow {
+	display: none;
+}
 .btn--arrow--left {
 	background-image: url(../img/arrow-left.png);
 	left: 0.75rem;
