@@ -58,9 +58,9 @@ export default Marionette.LayoutView.extend({
     },
 
     showPanelPx() {
-        this.panelPx.show( new TagsView( {panel: "px"} ) );
+        !this.panelPx.hasView() && this.panelPx.show( new TagsView( {panel: "px"} ) );
     },
     showPanelSmith() {
-        this.panelSmith.show( new TagsView( {panel: "smith"} ) );
+        !this.panelSmith.hasView() && this.panelSmith.show( new TagsView( {panel: "smith"} ) );
     }
 });

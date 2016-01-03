@@ -1,0 +1,23 @@
+.drawer {
+    background-color: #df0d5c;
+    max-width: 30em;
+    margin: -5em auto 0;
+    padding: 5em 1em 0.5em;
+}
+
+.social {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.social li {
+    text-align: center !important;
+}
+.social--disc {
+    color: #f7f1e3;
+    text-decoration: none;
+    font-size: 24px;
+    display: inline-block;
+    border: 2px solid;
+    padding: 0.333333333em;
+    border-radius: 50%;
+}
