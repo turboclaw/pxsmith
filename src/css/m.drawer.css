@@ -5,6 +5,16 @@
     padding: 5em 1em 0.5em;
 }
 
+.acc__toggle {
+    text-align: center;
+}
+.acc__content {
+    background-color: #f7f1e3;
+    color: #171615;
+    font-size: 0.75em;
+    padding: 1em;
+}
+
 .social {
     margin-top: 0;
     margin-bottom: 0;

@@ -5,16 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Pixelsmith</title>
 	<link rel="stylesheet" type="text/css" href="css/pxsmith.css">
-	
+	<!--(if target localhost)><!-->
 	<script src="../node_modules/systemjs/dist/system.js"></script>
 	<script src="../config.js"></script>
 	<script>
 	  System.import("src/js/go.js");
 	</script>
-	
+	<!--<!(endif)-->
 </head>
 <body>
-
+<!--(if target dist)><!-->
+<script src="js/pxsmith.js"></script>
+<!--<!(endif)-->
 </body>
 </html>
 

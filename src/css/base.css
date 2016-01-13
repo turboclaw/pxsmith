@@ -13,3 +13,8 @@ img {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "petyka_-_retro_computer___sRg", "San Francisco", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+}
