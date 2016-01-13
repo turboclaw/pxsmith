@@ -15,7 +15,6 @@ export default Marionette.LayoutView.extend({
         $("[data-hook='acc-content']", this.$el).hide();
     },
     toggleAccordion(evt) {
-        $("[data-hook='acc-content']", this.$el).slideUp();
-        $(evt.currentTarget).closest(".acc__item").addClass(".is-open").find("[data-hook='acc-content']").slideDown();
+        $(evt.currentTarget).next().slideToggle();
     }
 });
