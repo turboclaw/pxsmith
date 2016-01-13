@@ -3,7 +3,8 @@
     padding: 1em;
     box-sizing: border-box;
     float: left;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
 }
 .panel--px {
     padding-right: 10%;
