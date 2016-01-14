@@ -14,13 +14,20 @@ export default Marionette.LayoutView.extend({
         "click [data-hook='back-to-landing']": "backToLanding",
         "click [data-hook='drawer-toggle']": "toggleDrawer"
     },
+    initialize() {
+        Radio.channel("app").on({
+            "drawer:hide": this.hideDrawer
+        });
+    },
     showPx() {
     	$("main").addClass("is-px").removeClass("is-smith");
         Radio.channel("app").trigger("panel:show-px");
+        this.hideDrawer();
     },
     showSmith() {
     	$("main").addClass("is-smith").removeClass("is-px");
         Radio.channel("app").trigger("panel:show-smith");
+        this.hideDrawer();
     },
     backToLanding() {
         $("main").removeClass("is-smith is-px");
@@ -28,5 +35,8 @@ export default Marionette.LayoutView.extend({
 
     toggleDrawer() {
         !this.drawer.hasView() ? this.drawer.show( new DrawerView() ) : this.drawer.reset();
+    },
+    hideDrawer() {
+        this.drawer.hasView() && this.drawer.reset();
     }
 });

@@ -11,7 +11,11 @@ export default Marionette.LayoutView.extend({
     events: {
         "click [data-hook='acc-toggle']": "toggleAccordion"
     },
-    onShow() {
+    onAttach() {
+        setTimeout(() => {
+            this.$el.addClass("is-open");
+        }, 1);
+        
         $("[data-hook='acc-content']", this.$el).hide();
     },
     toggleAccordion(evt) {

@@ -3,6 +3,13 @@
     max-width: 30em;
     margin: -5em auto 0;
     padding: 5em 1em 0.5em;
+    transform: translateY(-100%);
+    transition: transform 0.75s ease-out;
+    position: relative;
+    z-index: 1;
+}
+.drawer.is-open {
+    transform: translateY(0);
 }
 
 .acc__toggle {

@@ -10,6 +10,9 @@
 }
 .grid--logo {
 	margin: 0;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
 }
 .grid__cell--icon {
 	width: 10.1724138%;
