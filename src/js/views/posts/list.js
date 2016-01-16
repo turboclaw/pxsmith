@@ -17,7 +17,18 @@ export default Marionette.CompositeView.extend({
 
         this.listenTo(this.collection, "sync", this.removeLoading)
     },
+    childViewOptions(model, index) {
+        return {
+            childIndex: index
+        }
+    },
+    childEvents: {
+        "show:detail": "showDetail"
+    },
     removeLoading() {
     	this.$el.find("[data-hook='loading']").remove();
+    },
+    showDetail(childView, childIndex) {
+        debugger;
     }
 });
