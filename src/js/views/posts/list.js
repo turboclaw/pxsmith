@@ -29,6 +29,6 @@ export default Marionette.CompositeView.extend({
     	this.$el.find("[data-hook='loading']").remove();
     },
     showDetail(childView, childIndex) {
-        debugger;
+        // model i want is this.collection.at(childIndex)
     }
 });
