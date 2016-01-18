@@ -3,5 +3,8 @@ import JST from "js/shims/jst";
 
 export default Marionette.ItemView.extend({
     className: "post",
-    template: JST["posts/detail"]
+    template: JST["posts/detail"],
+    initialize(options = {}) {
+    	debugger;
+    }
 });

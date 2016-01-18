@@ -11,7 +11,8 @@ export default Marionette.LayoutView.extend({
     regions: {
         panelLanding: "[data-hook='panel-landing']",
         panelPx: "[data-hook='panel-px']",
-        panelSmith: "[data-hook='panel-smith']"
+        panelSmith: "[data-hook='panel-smith']",
+        overlay: "[data-hook='overlay']"
     },
 
     onRender() {

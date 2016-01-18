@@ -1,7 +1,9 @@
 import Marionette from "backbone.marionette";
+import Radio from "backbone.radio";
 import JST from "js/shims/jst";
 import PostsCollection from "js/collections/posts";
 import PostListItemView from "js/views/posts/list-item";
+import DetailView from "js/views/posts/detail";
 
 export default Marionette.CompositeView.extend({
 	tagName: "li",
@@ -30,5 +32,11 @@ export default Marionette.CompositeView.extend({
     },
     showDetail(childView, childIndex) {
         // model i want is this.collection.at(childIndex)
+        Radio.channel("app").trigger("overlay:show", {
+            preformatted: true,
+            view: new DetailView({
+                model: this.collection.at(childIndex)
+            })
+        })
     }
 });
