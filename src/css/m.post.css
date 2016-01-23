@@ -12,3 +12,11 @@
     text-indent: -1000em;
     line-height: 0;
 }
+
+.detail__photos {
+    margin-top: 0;
+}
+.detail__photo {
+    text-align: center;
+    margin-bottom: 2.5%;
+}

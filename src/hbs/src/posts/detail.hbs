@@ -1,6 +1,7 @@
-<ul class="photos grid">
+<button type="button" data-hook="close-overlay" class="btn--close">X</button>
+<ul class="detail__photos grid">
 {{#each photos}}
-	<li class="grid__cell--1 grid__cell--1/2@tablet grid__cell--1/4@widescreen"><img src="{{alt_sizes.1.url}}" alt="{{caption}}"></li>
+	<li class="grid__cell--1 grid__cell--1/2@tablet grid__cell--1/4@widescreen detail__photo"><img src="{{alt_sizes.1.url}}" alt="{{caption}}"></li>
 {{/each}}
 </ul>
-<div class="caption">{{{caption}}}</div>
+<div class="detail__caption">{{{caption}}}</div>
