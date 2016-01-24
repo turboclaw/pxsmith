@@ -1,3 +1,8 @@
+.butts {
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
 [role="main"] {
 	width: 200%;
 	transform: translateX(-25%);
