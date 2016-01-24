@@ -8,12 +8,12 @@
 }
 .panel--px {
     padding-right: 10%;
-    background: #a9a69b;
+    background: url(../img/panel-px.png) 50% 100% / contain repeat-x #a9a69b ;
     color: #0098b3;
 }
 .panel--smith {
     padding-left: 10%;
-    background: #2d2a28;
+    background: url(../img/panel-smith.png) 50% 100% / contain repeat-x #2d2a28;
     color: #faca30;
 }
 
@@ -24,7 +24,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url(../img/josh.png) no-repeat center bottom;
+    background: url(../img/josh.png) 50% 100% no-repeat;
     background-size: contain;
 }
 
@@ -37,14 +37,14 @@
 .is-px .landing .btn--back {
     display: block;
     right: 52.5%;
-    background: url(../img/arrow-right.png) no-repeat 100% 50%;
+    background: url(../img/arrow-right.png) 100% 50% no-repeat;
     background-size: contain;
     padding-right: 1em;
 }
 .is-smith .landing .btn--back {
     display: block;
     left: 52.5%;
-    background: url(../img/arrow-left.png) no-repeat 0 50%;
+    background: url(../img/arrow-left.png) 0 50% no-repeat;
     background-size: contain;
     padding-left: 1em;
 }
