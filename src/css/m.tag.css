@@ -1,6 +1,11 @@
+.tag {
+	opacity: 0.25;
+	transition: opacity 0.75s ease;
+}
 .is-px .tag,
 .is-smith .tag {
 	position: relative;
+	opacity: 1;
 }
 .tag__title {
 

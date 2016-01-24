@@ -5,12 +5,14 @@
     width: 100%;
     padding-top: 100%;
     border: 5px solid #575755;
+    background-color: #575755;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     text-indent: -1000em;
     line-height: 0;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 .detail__photos {
