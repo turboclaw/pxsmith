@@ -11,6 +11,9 @@
 .drawer.is-open {
     transform: translateY(0);
 }
+.drawer a {
+    color: #f7f1e3;
+}
 
 .acc__toggle {
     text-align: center;
@@ -31,7 +34,6 @@
     text-align: center !important;
 }
 .social--disc {
-    color: #f7f1e3;
     text-decoration: none;
     font-size: 24px;
     display: inline-block;
