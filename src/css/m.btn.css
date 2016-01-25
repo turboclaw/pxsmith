@@ -25,13 +25,3 @@
     background-image: url(../img/arrow-right.png);
     right: 0.75rem;
 }
-.btn--close {
-    font: 2em "petyka_-_retro_computer___sRg", "San Francisco", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    position: absolute;
-    top: 0.25em;
-    right: 0.25em;
-    background-color: transparent;
-    border: 0;
-    text-shadow: 1px 1px 3px #000;
-    padding: 0;
-}
