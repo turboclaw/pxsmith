@@ -14,6 +14,7 @@
 
 .acc__toggle {
     text-align: center;
+    cursor: pointer;
 }
 .acc__content {
     background-color: #f7f1e3;

@@ -13,6 +13,10 @@ img {
 h1, h2, h3, h4, h5, h6 {
 	font-family: "petyka_-_retro_computer___sRg", "San Francisco", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+a {
+	color: #df0d5c;
+	text-decoration: none;
+}
 
 ul, ol {
 	list-style: none;
