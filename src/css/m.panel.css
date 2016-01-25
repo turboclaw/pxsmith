@@ -4,16 +4,26 @@
     box-sizing: border-box;
     float: left;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.overlay.is-visible + [role="main"] .panel {
+    -webkit-overflow-scrolling: auto;
 }
 .panel--px {
     padding-right: 10%;
     background: url(../img/panel-px.png) 50% 100% / contain repeat-x #a9a69b ;
+}
+.panel--px .tag__title,
+.panel--px a {
     color: #0098b3;
 }
 .panel--smith {
     padding-left: 10%;
     background: url(../img/panel-smith.png) 50% 100% / contain repeat-x #2d2a28;
+}
+.panel--smith .tag__title,
+.panel--smith a {
     color: #faca30;
 }
 
@@ -26,9 +36,11 @@
     transform: translateX(-50%);
     background: url(../img/josh.png) 50% 100% no-repeat;
     background-size: contain;
-}
-[role="main"]:not(.is-px):not(.is-smith) .landing {
     z-index: 1;
+}
+.is-px .landing,
+.is-smith .landing {
+    pointer-events: none;
 }
 
 .landing .btn--back {
@@ -40,6 +52,7 @@
     text-indent: -1000em;
     overflow: hidden;
     background-color: transparent;
+    pointer-events: auto;
 }
 .is-px .landing .btn--back {
     display: block;
