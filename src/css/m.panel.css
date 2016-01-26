@@ -30,7 +30,7 @@
 .landing {
     position: absolute;
     width: 50%;
-    height: 100vh;
+    height: 95vh;
     top: 0;
     left: 50%;
     transform: translateX(-50%);

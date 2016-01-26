@@ -25,3 +25,13 @@
     background-image: url(../img/arrow-right.png);
     right: 0.75rem;
 }
+@media screen and (min-width: 672px) {
+    .btn--arrow {
+        width: 7.5%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .btn--arrow {
+        width: 5%;
+    }
+}
