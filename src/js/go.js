@@ -10,14 +10,12 @@ let Application = Marionette.Application.extend({
     initialize() {
         this.layout = new RootView();
         this.layout.render();
-        this.router = new Router({
-            container: this.layout.content
-        });
+        this.router = new Router();
     },
     onStart() {
         Backbone.history.start({
             pushState: false,
-            root: "/src/"
+            root: window._historyroot || "/"
         });
     }
 });

@@ -20,10 +20,6 @@ export default Marionette.LayoutView.extend({
     },
 
     initialize() {
-        this.initializeListeners();
-    },
-
-    initializeListeners() {
         Radio.channel("app").on({
             "overlay:show": this.showOverlay,
             "overlay:hide": this.hideOverlay,
