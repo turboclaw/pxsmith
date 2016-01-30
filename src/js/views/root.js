@@ -27,6 +27,7 @@ export default Marionette.LayoutView.extend({
         Radio.channel("app").on({
             "overlay:show": this.showOverlay,
             "overlay:hide": this.hideOverlay,
+            "panel:reset": this.resetPanels,
             "panel:show-px": this.showPanelPx,
             "panel:show-smith": this.showPanelSmith
         }, this);
@@ -58,10 +59,15 @@ export default Marionette.LayoutView.extend({
         this.overlay.empty();
     },
 
+    resetPanels() {
+        $("main").removeClass("is-px is-smith");
+    },
     showPanelPx() {
+        $("main").addClass("is-px").removeClass("is-smith");
         !this.panelPx.hasView() && this.panelPx.show( new TagsView( {panel: "px"} ) );
     },
     showPanelSmith() {
+        $("main").addClass("is-smith").removeClass("is-px");
         !this.panelSmith.hasView() && this.panelSmith.show( new TagsView( {panel: "smith"} ) );
     }
 });
