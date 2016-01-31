@@ -9,13 +9,13 @@ export default Marionette.AppRouter.extend({
         "*no_matched_route": "noMatchedRoute"
     },
     index() {
-    	Radio.channel("app").trigger("panel:reset");
+        Radio.channel("app").trigger("panel:reset");
     },
     px() {
-    	Radio.channel("app").trigger("panel:show-px");
+        Radio.channel("app").trigger("panel:show-px");
     },
     smith() {
-    	Radio.channel("app").trigger("panel:show-smith");
+        Radio.channel("app").trigger("panel:show-smith");
     },
     noMatchedRoute() {
         // console.log("no matched route");

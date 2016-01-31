@@ -8,7 +8,7 @@ export default Marionette.CompositeView.extend({
     childView: PostsView,
     childViewContainer: "[data-hook='tags-list']",
     initialize(options = {}) {
-    	this.collection = new TagsCollection(options);
+        this.collection = new TagsCollection(options);
         this.collection.fetch();
     }
 });
