@@ -8,6 +8,8 @@
     -webkit-overflow-scrolling: touch;
 }
 .overlay.is-visible + [role="main"] .panel {
+    pointer-events: none;
+    overflow: hidden;
     -webkit-overflow-scrolling: auto;
 }
 .panel--px {
