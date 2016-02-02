@@ -26,18 +26,4 @@ $(() => {
 
     window.pxsmithApp.start();
 
-    /**
-     * Handler for any jQuery ajax error. Respond by triggereing different events conditionally by
-     * HTTP status code
-     */
-    $(document).ajaxError((event, request, settings) => {
-        if ( _.contains([401, 403], request.status) ) {
-            Radio.channel("auth").trigger("not-authorized");
-        } else {
-            Radio.channel("app").trigger("overlay:show", {
-                title: "global.error",
-                message: "messages.error_ajax"
-            });
-        }
-    });
 });
