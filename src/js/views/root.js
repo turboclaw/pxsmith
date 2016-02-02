@@ -44,8 +44,6 @@ export default Marionette.LayoutView.extend({
         if ( !this.overlay.hasView() || options.killOtherOverlays ) {
             if (options.preformatted && options.view) {
                 this.overlay.show(options.view);
-            } else {
-                this.overlay.show( new OverlayCardView(options) );
             }
             this.overlay.$el.addClass("is-visible");
         }
