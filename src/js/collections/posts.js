@@ -7,7 +7,7 @@ export default Backbone.Collection.extend({
         this.tag = options.tag;
     },
     url() {
-        return "https://api.tumblr.com/v2/blog/rashystreakers.tumblr.com/posts";
+        return this.tag && "https://api.tumblr.com/v2/blog/rashystreakers.tumblr.com/posts";
     },
     sync(method, model, options) {
         return $.ajax(_.extend({
